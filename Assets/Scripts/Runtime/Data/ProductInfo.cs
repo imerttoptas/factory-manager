@@ -1,15 +1,13 @@
 using System.Collections.Generic;
-using NaughtyAttributes;
+using Runtime.Gameplay.Items;
 using UnityEngine;
 
 namespace Runtime.Data
 {
     [CreateAssetMenu(fileName = "ProductInfo", menuName = "Gameplay/ProductInfo")]
-    public class ProductInfo : ScriptableObject
+    public class ProductInfo : ItemInfo
     {
-        [ShowAssetPreview] public Sprite icon;
         public List<RequiredMaterialInfo> requiredMaterialInfos;
-        public ItemType itemType;
     }
 
     [System.Serializable]
