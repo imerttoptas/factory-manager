@@ -1,5 +1,6 @@
 using System;
 using System.Collections.Generic;
+using Newtonsoft.Json;
 using Runtime.Data;
 
 namespace Runtime.Gameplay.Inventory
@@ -8,8 +9,8 @@ namespace Runtime.Gameplay.Inventory
     public class Inventory
     {
         public int capacity;
-        private List<InventoryItem> inventoryItems;
-        public int CurrentItemCount
+        public List<InventoryItem> inventoryItems = new();
+        [JsonIgnore] public int CurrentItemCount
         {
             get
             {
@@ -26,33 +27,6 @@ namespace Runtime.Gameplay.Inventory
         public Inventory()
         {
             
-        }
-        
-        public void IncreaseCapacity(int amount)
-        {
-            capacity += amount;
-        }
-        
-        public void DecreaseItemCount(ItemType itemType, int count)
-        {
-            var targetItem = inventoryItems.Find(x => x.itemType == itemType);
-            if (targetItem != null)
-            {
-                targetItem.amount -= count;
-            }
-        }        
-        
-        public void IncreaseItemCount(ItemType itemType, int count)
-        {
-            var targetItem = inventoryItems.Find(x => x.itemType == itemType);
-            if (targetItem != null)
-            {
-                targetItem.amount += count;
-            }
-            else
-            {
-                inventoryItems.Add(new InventoryItem(itemType, count));
-            }
         }
     }
 

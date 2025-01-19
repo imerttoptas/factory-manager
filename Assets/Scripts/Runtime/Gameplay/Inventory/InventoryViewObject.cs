@@ -12,7 +12,7 @@ namespace Runtime.Gameplay.Inventory
 
         public void OnClick()
         {
-            
+            InventoryManager.instance.InventoryPanel.Open();
         }
 
         public bool CanBeClicked { get; set; }
