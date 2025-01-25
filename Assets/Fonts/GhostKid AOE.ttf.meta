@@ -1,0 +1,25 @@
+fileFormatVersion: 2
+guid: 2a1622c9ad3564a51a60d45279e2200c
+TrueTypeFontImporter:
+  externalObjects: {}
+  serializedVersion: 4
+  fontSize: 16
+  forceTextureCase: -2
+  characterSpacing: 0
+  characterPadding: 1
+  includeFontData: 1
+  fontName: GhostKidAOE
+  fontNames:
+  - GhostKidAOE
+  - Roboto
+  fallbackFontReferences:
+  - {fileID: 12800000, guid: 91c07fbcbb13d4ce3a641f2a65678042, type: 3}
+  - {fileID: 12800000, guid: 4beb055f07aaff244873dec698d0363e, type: 3}
+  customCharacters: 
+  fontRenderingMode: 0
+  ascentCalculationMode: 1
+  useLegacyBoundsCalculation: 0
+  shouldRoundAdvanceValue: 1
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 
