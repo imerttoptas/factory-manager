@@ -23,10 +23,27 @@ namespace Runtime.Gameplay.Inventory
                 return totalCount;
             }
         }
-
-        public Inventory()
+        
+        public void DecreaseItemCount(ItemType itemType, int count)
         {
-            
+            var targetItem = inventoryItems.Find(x => x.itemType == itemType);
+            if (targetItem != null)
+            {
+                targetItem.amount -= count;
+            }
+        }
+        
+        public void IncreaseItemCount(ItemType itemType, int count)
+        {
+            var targetItem = inventoryItems.Find(x => x.itemType == itemType);
+            if (targetItem != null)
+            {
+                targetItem.amount += count;
+            }
+            else
+            {
+                inventoryItems.Add(new InventoryItem(itemType, count));
+            }
         }
     }
 

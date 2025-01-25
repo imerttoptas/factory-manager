@@ -1,3 +1,4 @@
+using NaughtyAttributes;
 using Runtime.Data;
 using Runtime.Gameplay.Inventory.UI;
 using UnityEngine;
@@ -7,7 +8,6 @@ namespace Runtime.Gameplay.Inventory
     public class InventoryManager : Singleton<InventoryManager>
     {
         private Inventory inventory;
-
         public Inventory Inventory
         {
             get
@@ -57,7 +57,7 @@ namespace Runtime.Gameplay.Inventory
             {
                 targetItem.amount -= count;
             }
-        }
+        }        
         
         public void IncreaseItemCount(ItemType itemType, int count)
         {
@@ -71,5 +71,26 @@ namespace Runtime.Gameplay.Inventory
                 Inventory.inventoryItems.Add(new InventoryItem(itemType, count));
             }
         }
+
+        public bool IsExistInInventory(ItemType itemType, int count)
+        {
+            var targetItem = Inventory.inventoryItems.Find(x => x.itemType == itemType);
+            if (targetItem != null)
+            {
+                return targetItem.amount >= count;
+            }
+            
+            return false;
+        }
+
+#if UNITY_EDITOR
+        [SerializeField] private ItemType type;
+        [SerializeField] private int amount;
+        [Button]
+        public void IncreaseInventoryItem()
+        {
+            IncreaseItemCount(type, amount);
+        }
+#endif
     }
 }
