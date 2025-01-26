@@ -1,4 +1,5 @@
 using Runtime.Data;
+using Runtime.Data.Products;
 using UnityEngine;
 
 namespace Runtime.Gameplay.Items

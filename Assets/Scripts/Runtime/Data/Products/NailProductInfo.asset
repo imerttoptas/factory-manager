@@ -13,7 +13,9 @@ MonoBehaviour:
   m_Name: NailProductInfo
   m_EditorClassIdentifier: 
   icon: {fileID: 21300000, guid: 3843ae751295b48ea856c92bc29f3ddb, type: 3}
+  itemType: 3
   requiredMaterialInfos:
   - materialInfo: {fileID: 11400000, guid: fc1527b75a6804f03a08f586d0bd2a8e, type: 2}
     amount: 1
-  itemType: 3
+  cost: 400
+  name: Nail

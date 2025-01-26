@@ -1,4 +1,6 @@
-namespace Runtime.Data
+using Runtime.Data.Products;
+
+namespace Runtime.Data.Demand
 {
     [System.Serializable]
     public class OrderInfo

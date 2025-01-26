@@ -1,3 +1,4 @@
+using Runtime.Data.Products;
 using UnityEngine;
 
 namespace Runtime.Data.Machines

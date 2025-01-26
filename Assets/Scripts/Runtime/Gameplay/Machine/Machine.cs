@@ -20,14 +20,14 @@ namespace Runtime.Gameplay.Machine
         {
             foreach (var requiredMaterialInfo in machineInfo.productInfo.requiredMaterialInfos)
             {
-                InventoryManager.instance.Inventory.DecreaseItemCount(requiredMaterialInfo.materialInfo.itemType,
+                InventoryManager.instance.DecreaseItemCount(requiredMaterialInfo.materialInfo.itemType,
                     requiredMaterialInfo.amount);
             }
         }
         
         private void GetFinalProduct(int count)
         {
-            InventoryManager.instance.Inventory.IncreaseItemCount(machineInfo.productInfo.itemType, count);
+            InventoryManager.instance.IncreaseItemCount(machineInfo.productInfo.itemType, count);
         }
     }
 }

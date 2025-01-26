@@ -18,20 +18,22 @@ namespace Runtime.Gameplay.Input
 
         void Update()
         {
-            if (UnityEngine.Input.GetMouseButtonDown(0))
+            if (GameManager.instance.currentState != GameState.InputDisabled)
             {
-                dragOrigin = cam.ScreenToWorldPoint(UnityEngine.Input.mousePosition);
-            }
-            if (UnityEngine.Input.GetMouseButton(0))
-            {
-                difference = dragOrigin - cam.ScreenToWorldPoint(UnityEngine.Input.mousePosition);
-                cam.transform.position = ClampPosition(cam.transform.position + difference);
-            }
-
-            if (UnityEngine.Input.GetMouseButtonUp(0))
-            {
-                IClickableObject clickedObject = TryGetClickedObject();
-                clickedObject?.OnClick();
+                if (UnityEngine.Input.GetMouseButtonDown(0))
+                {
+                    dragOrigin = cam.ScreenToWorldPoint(UnityEngine.Input.mousePosition);
+                }
+                if (UnityEngine.Input.GetMouseButton(0))
+                {
+                    difference = dragOrigin - cam.ScreenToWorldPoint(UnityEngine.Input.mousePosition);
+                    cam.transform.position = ClampPosition(cam.transform.position + difference);
+                }
+                if (UnityEngine.Input.GetMouseButtonUp(0))
+                {
+                    IClickableObject clickedObject = TryGetClickedObject();
+                    clickedObject?.OnClick();
+                }
             }
         }
         

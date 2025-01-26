@@ -13,9 +13,11 @@ MonoBehaviour:
   m_Name: TableInfo
   m_EditorClassIdentifier: 
   icon: {fileID: 21300000, guid: 8b278b7f1aba5482d89cb649de6c5b39, type: 3}
+  itemType: 4
   requiredMaterialInfos:
   - materialInfo: {fileID: 11400000, guid: 30df70044ec6c45e7aa254c02071ce21, type: 2}
     amount: 8
   - materialInfo: {fileID: 11400000, guid: 41caed6be4e174e8a889dddf77256ea4, type: 2}
     amount: 2
-  itemType: 4
+  cost: 250
+  name: Table

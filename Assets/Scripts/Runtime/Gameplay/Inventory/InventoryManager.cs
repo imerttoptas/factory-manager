@@ -35,7 +35,6 @@ namespace Runtime.Gameplay.Inventory
                 return inventoryPanel;
             }
         }
-
         protected override void Awake()
         {
             base.Awake();
@@ -44,7 +43,7 @@ namespace Runtime.Gameplay.Inventory
             IncreaseItemCount(ItemType.Iron, 15);
             IncreaseItemCount(ItemType.Nail, 15);
         }
-
+        
         public void IncreaseCapacity(int amount)
         {
             Inventory.capacity += amount;
@@ -81,6 +80,11 @@ namespace Runtime.Gameplay.Inventory
             }
             
             return false;
+        }        
+        
+        public int GetInventoryItemCount(ItemType itemType)
+        {
+            return Inventory.inventoryItems.Find(x => x.itemType == itemType)?.amount ?? 0;
         }
 
 #if UNITY_EDITOR

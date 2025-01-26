@@ -1,0 +1,19 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: d8e3cbd2a329f48dc8d2509711c9870b, type: 3}
+  m_Name: IronSupplyOrder-200
+  m_EditorClassIdentifier: 
+  rawMaterialInfo: {fileID: 11400000, guid: fc1527b75a6804f03a08f586d0bd2a8e, type: 2}
+  batchSize: 200
+  batchCost: 1500
+  leadTime: 2
+  capacity: 10

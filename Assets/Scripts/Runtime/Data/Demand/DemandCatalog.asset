@@ -12,60 +12,13 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 03a4aea67fd94a818082e235a5162221, type: 3}
   m_Name: DemandCatalog
   m_EditorClassIdentifier: 
-  periodInfos:
+  demandInfos:
   - orderInfos:
-    - productInfo: {fileID: 11400000, guid: 8e2831c741c1b4b8ab4767f10fa27794, type: 2}
+    - productInfo: {fileID: 11400000, guid: 5e19149d3276241928e7a07ad2501d10, type: 2}
       quantity: 50
-    period: 1
-  - orderInfos:
-    - productInfo: {fileID: 11400000, guid: 5e19149d3276241928e7a07ad2501d10, type: 2}
-      quantity: 25
     - productInfo: {fileID: 11400000, guid: 8e2831c741c1b4b8ab4767f10fa27794, type: 2}
-      quantity: 25
-    period: 2
-  - orderInfos:
-    - productInfo: {fileID: 11400000, guid: 5e19149d3276241928e7a07ad2501d10, type: 2}
       quantity: 40
-    - productInfo: {fileID: 11400000, guid: 8e2831c741c1b4b8ab4767f10fa27794, type: 2}
-      quantity: 30
-    period: 3
-  - orderInfos:
-    - productInfo: {fileID: 11400000, guid: 8e2831c741c1b4b8ab4767f10fa27794, type: 2}
-      quantity: 80
-    - productInfo: {fileID: 11400000, guid: 5e19149d3276241928e7a07ad2501d10, type: 2}
-      quantity: 10
-    period: 4
-  - orderInfos:
-    - productInfo: {fileID: 11400000, guid: 7bf3f8b532df5470e91490eedc10e60f, type: 2}
-      quantity: 100
-    - productInfo: {fileID: 0}
-      quantity: 100
-    period: 5
-  - orderInfos:
-    - productInfo: {fileID: 0}
-      quantity: 100
-    period: 6
-  - orderInfos:
-    - productInfo: {fileID: 0}
-      quantity: 100
-    period: 7
-  - orderInfos:
-    - productInfo: {fileID: 0}
-      quantity: 100
-    period: 8
-  - orderInfos:
-    - productInfo: {fileID: 0}
-      quantity: 100
-    period: 9
-  - orderInfos:
-    - productInfo: {fileID: 0}
-      quantity: 100
-    period: 10
-  - orderInfos:
-    - productInfo: {fileID: 0}
-      quantity: 100
-    period: 11
-  - orderInfos:
-    - productInfo: {fileID: 0}
-      quantity: 100
-    period: 12
+    period: 2
+    revenue: 2000
+    customerName: "\u015Eap\u015Fik Dilara"
+    status: 0

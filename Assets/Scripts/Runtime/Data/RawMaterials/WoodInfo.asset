@@ -15,3 +15,5 @@ MonoBehaviour:
   icon: {fileID: 21300000, guid: 9cd253f3f50ad4c13b65c3c3f7d247fb, type: 3}
   itemType: 2
   batchSize: 100
+  batchCost: 500
+  batchSupplyLeadTime: 0

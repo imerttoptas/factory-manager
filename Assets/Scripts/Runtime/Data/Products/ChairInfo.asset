@@ -13,9 +13,11 @@ MonoBehaviour:
   m_Name: ChairInfo
   m_EditorClassIdentifier: 
   icon: {fileID: 21300000, guid: e2fe34c1562b2427fadf1df11a30f574, type: 3}
+  itemType: 4
   requiredMaterialInfos:
   - materialInfo: {fileID: 11400000, guid: 30df70044ec6c45e7aa254c02071ce21, type: 2}
     amount: 4
   - materialInfo: {fileID: 11400000, guid: 41caed6be4e174e8a889dddf77256ea4, type: 2}
     amount: 1
-  itemType: 4
+  cost: 300
+  name: Chair
